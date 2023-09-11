@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "/createUser" method="POST">
+        <input type="text" name = "name" placeholder="name" required>
+        <input type="number" name = "age" placeholder="age" required>
+        <input type = "email" name = "email" placeholder="email" required>
+        <button type = "submit">Add User</button>
+    </form>
+    <p>
+        <h1>User Information:</h1>
+        <p>Name: <%= userName %></p>
+        <p>Age: <%= userAge %></p>
+        <p>Email: <%= userEmail %></p>
+    </p> 
+
+</body>
+</html>
